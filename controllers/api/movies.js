@@ -13,7 +13,7 @@ function show(req, res, next) {
         .populate('cast')
         .exec(function (e, m) {
             res.status(201).json(m);
-        })
+        });
 }
 
 function newMovie(req, res, next) {
